@@ -20,7 +20,7 @@ const Header = () => {
           <Nav className="ml-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/dashboard">Dashboard</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link as={Link} to="/about-us">Sobre Nós</Nav.Link>
             <Nav.Link as={Link} to="/contact">Contato</Nav.Link>
           </Nav>
         </Navbar.Collapse>

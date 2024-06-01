@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import ChartComponent from './Pages/ChartComponent/ChartComponent';
 import Contact from './Pages/Contact/Contact';
+import AboutUs from './Pages/SobreNos/SobreNos';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: 'dashboard', element: <ChartComponent /> },
       { path: 'contact', element: <Contact /> }, // Adicione a rota de contato
+      { path: 'about-us', element: <AboutUs /> }, // Adicione a rota para AboutUs
     ]
   }
 ]);
