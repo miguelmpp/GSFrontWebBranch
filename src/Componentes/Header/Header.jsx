@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-/* import imgLogo from "../../assets/images/horizontal3.jpg";
-import './Header.scss'; // Importe o arquivo Sass para estilização */
+import imgLogo from "../../assets/images/horizontal3.jpg";
+import './Header.scss'; // Importe o arquivo Sass para estilização 
 
 const Header = () => {
   return (
