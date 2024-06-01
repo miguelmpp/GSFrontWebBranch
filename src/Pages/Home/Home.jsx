@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-import CarouselComponent from '../Componenetes/Carousel/CarouselComponent'; // Importe o carrossel
+import CarouselComponent from '../../Componentes/Carousel/CarouselComponent';
 import imgAbout from "../assets/images/about2.avif";
 import imgApi from "../assets/images/api_rio_sp.png";
 import imgVigilancia from "../assets/images/oceanos_vigilancia.webp";
