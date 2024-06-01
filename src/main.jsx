@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
-// import './styles.scss'; // Importar o arquivo Sass
+import './styles.scss'; // Importar o arquivo Sass
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importar Bootstrap
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Importar Font Awesome
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
