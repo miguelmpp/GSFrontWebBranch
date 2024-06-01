@@ -1,0 +1,43 @@
+.carousel {
+    .carousel-item {
+      height: 60vh; /* Ajustar a altura do carrossel */
+      img {
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+  
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
+      padding: 20px;
+      border-radius: 10px;
+      color: white; /* Tornar o texto branco para contraste */
+      text-align: left; /* Alinhar o texto à esquerda */
+  
+      h3 {
+        color: white; /* Tornar o título branco */
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+  
+      p {
+        color: white; /* Tornar o texto branco */
+        font-size: 1rem;
+        margin-top: 10px;
+      }
+    }
+  
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+    }
+  
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+      border-radius: 50%; /* Bordas arredondadas */
+      padding: 10px; /* Espaçamento interno */
+      filter: invert(1); /* Tornar as setas brancas */
+    }
+  }
+  
