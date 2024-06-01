@@ -1,5 +1,5 @@
 import React from 'react';
-// import './AboutUs.scss'; // Importe o arquivo SCSS
+import './SobreNos.scss'; // Importe o arquivo SCSS
 import imgMiguel from '../../assets/images/miguel.jpg';
 import imgMatheus from '../../assets/images/matheus_farias.jpg';
 
