@@ -8,7 +8,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css'; // Importar Font Awesome
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 // import ChartComponent from './Componenetes/ChartComponent/ChartComponent';
-// import Contact from './Pages/Contact/Contact';
+import Contact from './Pages/Contact/Contact';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       // { path: 'dashboard', element: <ChartComponent /> },
-      // { path: 'contact', element: <Contact /> }, // Adicione a rota de contato
+      { path: 'contact', element: <Contact /> }, // Adicione a rota de contato
     ]
   }
 ]);
