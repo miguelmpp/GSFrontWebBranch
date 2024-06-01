@@ -6,7 +6,7 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importar Bootstrap
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Importar Font Awesome
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-// import Home from './Pages/Home';
+import Home from './Pages/Home/Home';
 // import ChartComponent from './Componenetes/ChartComponent/ChartComponent';
 // import Contact from './Pages/Contact/Contact';
 
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     children: [
-      // { index: true, element: <Home /> },
+      { index: true, element: <Home /> },
       // { path: 'dashboard', element: <ChartComponent /> },
       // { path: 'contact', element: <Contact /> }, // Adicione a rota de contato
     ]
