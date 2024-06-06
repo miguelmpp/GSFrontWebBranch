@@ -1,0 +1,22 @@
+.ocean-health-dashboard {
+    .card {
+      background-color: #f8f9fa; /* Cor de fundo cinza claro */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+      .card-body {
+        .card-title {
+          color: #2c3e50; /* Cor de texto escura */
+          font-size: 1.5rem; /* Tamanho do texto */
+        }
+  
+        .card-text {
+          font-size: 1.2rem; /* Tamanho do texto */
+        }
+  
+        .text-muted {
+          font-size: 0.9rem; /* Tamanho do texto menor */
+        }
+      }
+    }
+  }
+  

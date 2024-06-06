@@ -1,0 +1,93 @@
+[
+    {
+      "fase": "Fase 1: Configuração Inicial e Prototipagem Rápida",
+      "items": [
+        {
+          "title": "Configuração do Ambiente de Desenvolvimento",
+          "description": "Configurar o ambiente local e de desenvolvimento para React e Node.js, incluindo todas as ferramentas necessárias como Babel, Webpack, e NPM."
+        },
+        {
+          "title": "Prototipagem da Interface com React",
+          "description": "Desenvolvimento de uma interface básica utilizando React, criando componentes que serão usados para apresentar os dados. Esta interface inicial será simples, focando na funcionalidade básica e na exibição de dados."
+        },
+        {
+          "title": "Conexão com a API Externa",
+          "description": "Implementar a lógica para consumir uma API pública que forneça dados sobre a saúde dos oceanos. Esta conexão inicial será usada para testar a viabilidade e a disponibilidade de dados."
+        }
+      ],
+      "icon": "fas fa-cogs fa-2x"
+    },
+    {
+      "fase": "Fase 2: Desenvolvimento e Integração",
+      "items": [
+        {
+          "title": "Desenvolvimento Frontend Avançado",
+          "description": "Refinar a interface do usuário, implementando uma navegação eficiente, melhorando o layout e a responsividade utilizando CSS e frameworks como Bootstrap ou Material-UI."
+        },
+        {
+          "title": "Implementação de Funcionalidades Interativas",
+          "description": "Adicionar elementos interativos como gráficos e mapas de calor utilizando bibliotecas como Chart.js ou Leaflet para uma representação visual mais efetiva dos dados."
+        },
+        {
+          "title": "Aprimoramento da Conexão API",
+          "description": "Melhorar o manuseio de dados da API, implementando funcionalidades como atualização em tempo real, tratamento de exceções e otimização de chamadas API para melhor desempenho e confiabilidade."
+        }
+      ],
+      "icon": "fas fa-code fa-2x"
+    },
+    {
+      "fase": "Fase 3: Testes e Ajustes",
+      "items": [
+        {
+          "title": "Testes de Componentes e Integração",
+          "description": "Realizar testes intensivos no frontend, incluindo testes de componentes com Jest e testes de integração para garantir que todos os elementos funcionem corretamente juntos."
+        },
+        {
+          "title": "Otimização de Performance",
+          "description": "Analisar e otimizar a performance do site, focando em carregamento rápido, eficiência de consultas à API e responsividade."
+        },
+        {
+          "title": "Ajustes de UI/UX",
+          "description": "Refinar a experiência do usuário com base no feedback inicial, ajustando o design e a usabilidade conforme necessário para garantir uma navegação intuitiva e engajadora."
+        }
+      ],
+      "icon": "fas fa-vial fa-2x"
+    },
+    {
+      "fase": "Fase 4: Preparação para Lançamento",
+      "items": [
+        {
+          "title": "Preparação de Ambiente de Produção",
+          "description": "Configurar o ambiente de produção, incluindo servidores, domínios e serviços de hospedagem."
+        },
+        {
+          "title": "Implementação de Segurança",
+          "description": "Garantir que todas as práticas de segurança sejam implementadas, incluindo HTTPS, proteção contra XSS e CSRF, e segurança em APIs."
+        },
+        {
+          "title": "Documentação",
+          "description": "Elaborar documentação detalhada sobre a arquitetura do sistema, o uso da plataforma, e guias para usuários finais."
+        }
+      ],
+      "icon": "fas fa-rocket fa-2x"
+    },
+    {
+      "fase": "Fase 5: Lançamento e Manutenção Contínua",
+      "items": [
+        {
+          "title": "Lançamento do Site",
+          "description": "Realizar o lançamento oficial do site, acompanhado de uma campanha para atrair usuários e stakeholders."
+        },
+        {
+          "title": "Monitoramento e Feedback",
+          "description": "Monitorar o sistema em operação, coletando feedback dos usuários para identificar áreas de melhoria."
+        },
+        {
+          "title": "Atualizações e Melhorias",
+          "description": "Implementar atualizações periódicas e melhorias na plataforma, baseando-se nos dados coletados e nas tendências tecnológicas emergentes."
+        }
+      ],
+      "icon": "fas fa-chart-line fa-2x"
+    }
+  ]
+  
