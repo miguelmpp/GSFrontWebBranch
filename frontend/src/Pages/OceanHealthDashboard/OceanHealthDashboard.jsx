@@ -27,17 +27,21 @@ const OceanHealthDashboard = () => {
   if (error) return <div className="alert alert-danger" role="alert">Erro: {error}</div>;
 
   return (
-    <div className="container my-5 ocean-health-dashboard">
-      <h1 className="mb-4 text-center">Ocean Health Dashboard</h1>
-      {data.map((item, index) => (
-        <div key={index} className="card mb-3">
-          <div className="card-body">
-            <h5 className="card-title">{item.location}</h5>
-            <p className="card-text"><strong>Water Quality:</strong> {item.water_quality}</p>
-            <p className="card-text"><small className="text-muted">Date: {item.date}</small></p>
+    <div className="container my-1 ocean-health-dashboard">
+      <h1 className="mb-5 text-center">Comparativo Global de Qualidade de Água por Região</h1>
+      <div className="row">
+        {data.map((item, index) => (
+          <div key={index} className="col mb-3">
+            <div className="card h-100">
+              <div className="card-body">
+                <h5 className="card-title">{item.location}</h5>
+                <p className="card-text"><strong>Water Quality:</strong> {item.water_quality}</p>
+                <p className="card-text"><small className="text-muted">Date: {item.date}</small></p>
+              </div>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

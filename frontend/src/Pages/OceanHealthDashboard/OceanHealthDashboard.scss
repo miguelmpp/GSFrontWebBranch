@@ -1,21 +1,48 @@
 .ocean-health-dashboard {
     .card {
-      background-color: #f8f9fa; /* Cor de fundo cinza claro */
+      background-color: #ffffff; /* Cor de fundo branca */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 100%; /* Garantir que todos os cartões tenham a mesma altura */
+  
+      &:hover {
+        transform: translateY(-5px); /* Efeito de hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra maior no hover */
+      }
   
       .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Distribuir o espaço uniformemente */
+  
         .card-title {
           color: #2c3e50; /* Cor de texto escura */
           font-size: 1.5rem; /* Tamanho do texto */
+          margin-bottom: 10px;
         }
   
         .card-text {
-          font-size: 1.2rem; /* Tamanho do texto */
+          font-size: 1.1rem; /* Tamanho do texto */
+          margin-bottom: 5px;
         }
   
         .text-muted {
           font-size: 0.9rem; /* Tamanho do texto menor */
         }
+      }
+    }
+  
+    .row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px; /* Espaçamento entre os cartões */
+    }
+  
+    @media (max-width: 768px) {
+      .row {
+        grid-template-columns: 1fr;
       }
     }
   }
