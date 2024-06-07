@@ -1,4 +1,4 @@
-# Ocean Health Tracker
+# Ocean Health Tracker - Front-end Design, Web Development, Computational Thinking with Python
 
 ## Alunos
 
