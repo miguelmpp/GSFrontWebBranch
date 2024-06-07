@@ -287,7 +287,7 @@ export default OceanHealthDashboard;
 
 #### 📈 Gráficos de Dados (ChartComponent.jsx)
 
-- **Consumo de API Externa:** Exibe dados sobre a contagem de lixo na praia por quilômetro quadrado obtidos de uma API pública.
+- **Consumo de API Externa:** Exibe dados sobre a contagem de lixo na praia por quilômetro quadrado obtidos de uma API pública. A API foi coletada do seguinte site: [https://digital.gpmarinelitter.org/](https://digital.gpmarinelitter.org/).
 
 ```jsx
 import React, { useEffect, useState } from 'react';
