@@ -98,59 +98,62 @@ GSFrontWebBranch/
     ├── package.json
     ├── README.md
     └── vite.config.js
-Instalação
-Backend (API em Python)
-Clone o repositório:
+```
 
-sh
-Copiar código
-git clone [URL do repositório]
-cd [nome do repositório]/backend
-Crie um ambiente virtual e ative-o:
+## Instalação
 
-sh
-Copiar código
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate  # Windows
-Instale as dependências:
+### Backend (API em Python)
 
-sh
-Copiar código
-pip install -r requirements.txt
-Execute a aplicação:
+1. Clone o repositório:
+    ```sh
+    git clone [URL do repositório]
+    cd [nome do repositório]/backend
+    ```
+2. Crie um ambiente virtual e ative-o:
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # Linux/Mac
+    venv\Scripts\activate  # Windows
+    ```
+3. Instale as dependências:
+    ```sh
+    pip install -r requirements.txt
+    ```
+4. Execute a aplicação:
+    ```sh
+    python app.py
+    ```
 
-sh
-Copiar código
-python app.py
-A API estará disponível em http://127.0.0.1:5000.
+A API estará disponível em `http://127.0.0.1:5000`.
 
-Frontend (React)
-Navegue até o diretório do frontend:
+### Frontend (React)
 
-sh
-Copiar código
-cd ../frontend
-Instale as dependências:
+1. Navegue até o diretório do frontend:
+    ```sh
+    cd ../frontend
+    ```
+2. Instale as dependências:
+    ```sh
+    npm install
+    ```
+3. Execute a aplicação:
+    ```sh
+    npm run dev
+    ```
 
-sh
-Copiar código
-npm install
-Execute a aplicação:
+A interface estará disponível em `http://localhost:5173`.
 
-sh
-Copiar código
-npm run dev
-A interface estará disponível em http://localhost:5173.
+## Uso
 
-Uso
-Exemplos de Uso
-Página Inicial (Home)
-Consumo de API Interna (JSON): Apresenta informações sobre as fases do projeto.
-Carrossel Dinâmico: Apresenta informações importantes sobre a plataforma.
-Seções Informativas: Descrição dos principais benefícios e funcionalidades do "Ocean Health Tracker".
-jsx
-Copiar código
+### Exemplos de Uso
+
+#### Página Inicial (Home)
+
+- **Consumo de API Interna (JSON):** Apresenta informações sobre as fases do projeto.
+- **Carrossel Dinâmico:** Apresenta informações importantes sobre a plataforma.
+- **Seções Informativas:** Descrição dos principais benefícios e funcionalidades do "Ocean Health Tracker".
+
+```jsx
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Container } from 'react-bootstrap';
@@ -193,13 +196,18 @@ const Home = () => {
 };
 
 export default Home;
-Contato (Contact)
-Formulário de Contato: Permite que usuários enviem mensagens.
-Validação: Validação dos campos do formulário antes do envio.
-Dashboard de Saúde dos Oceanos (OceanHealthDashboard.jsx)
-Exibição de Dados Processados: Exibe dados sobre a qualidade da água em diferentes regiões obtidos de uma API interna desenvolvida em Python.
-jsx
-Copiar código
+```
+
+#### Contato (Contact)
+
+- **Formulário de Contato:** Permite que usuários enviem mensagens.
+- **Validação:** Validação dos campos do formulário antes do envio.
+
+#### Dashboard de Saúde dos Oceanos (OceanHealthDashboard.jsx)
+
+- **Exibição de Dados Processados:** Exibe dados sobre a qualidade da água em diferentes regiões obtidos de uma API interna desenvolvida em Python.
+
+```jsx
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -249,10 +257,15 @@ const OceanHealthDashboard = () => {
 };
 
 export default OceanHealthDashboard;
-Gráficos de Dados (ChartComponent.jsx)
-Consumo de API Externa: Exibe dados sobre a contagem de lixo na praia por quilômetro quadrado obtidos de uma API pública.
-jsx
-Copiar código
+```
+
+#### Gráficos de Dados (ChartComponent.jsx)
+
+- **Consumo de API Externa:** Exibe dados sobre
+
+ a contagem de lixo na praia por quilômetro quadrado obtidos de uma API pública.
+
+```jsx
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Line } from 'react-chartjs-2';
@@ -332,9 +345,11 @@ const ChartComponent = () => {
 };
 
 export default ChartComponent;
-Estrutura do Projeto
-bash
-Copiar código
+```
+
+## Estrutura do Projeto
+
+```bash
 GSFrontWebBranch/
 ├── backend/
 │   ├── app.py
@@ -365,26 +380,37 @@ GSFrontWebBranch/
     ├── package.json
     ├── README.md
     └── vite.config.js
-Requisitos
-Backend
-Python 3.8+
-Flask
-Requests
-Flask-CORS
-Frontend
-Node.js
-React
-Axios
-Bootstrap
-Chart.js
-Dependências
-Backend
-Flask==2.0.1
-Requests==2.25.1
-Flask-CORS==3.0.10
-Frontend
-react==17.0.2
-axios==0.21.1
-bootstrap==5.1.0
-react-bootstrap==2.0.0
-chart.js==3.5.1
+```
+
+## Requisitos
+
+### Backend
+
+- Python 3.8+
+- Flask
+- Requests
+- Flask-CORS
+
+### Frontend
+
+- Node.js
+- React
+- Axios
+- Bootstrap
+- Chart.js
+
+## Dependências
+
+### Backend
+
+- Flask==2.0.1
+- Requests==2.25.1
+- Flask-CORS==3.0.10
+
+### Frontend
+
+- react==17.0.2
+- axios==0.21.1
+- bootstrap==5.1.0
+- react-bootstrap==2.0.0
+- chart.js==3.5.1
