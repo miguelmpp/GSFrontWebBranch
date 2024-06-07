@@ -36,6 +36,7 @@ const Contact = () => {
     if (Object.keys(formErrors).length === 0) {
       setSubmitted(true);
       setErrors({});
+      console.log('Form Data:', formData); // Adicione esta linha para enviar os dados do formulário ao console
       // Aqui você pode adicionar a lógica para enviar o formulário
     } else {
       setErrors(formErrors);
