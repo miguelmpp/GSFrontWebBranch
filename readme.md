@@ -1,23 +1,23 @@
-# Ocean Health Tracker - Front-end Design, Web Development, Computational Thinking with Python
+# 🌊 Ocean Health Tracker - Front-end Design, Web Development, Computational Thinking with Python
 
-## Alunos
+## 👥 Alunos
 
 - **Matheus Farias de Lima** - RM554254
 - **Miguel Mauricio Parrado Patarroyo** – RM554007
 
-## Descrição do Projeto
+## 📜 Descrição do Projeto
 
 O **Ocean Health Tracker** é uma plataforma desenvolvida para monitorar e analisar dados sobre a saúde dos oceanos. Utilizando tecnologias modernas de desenvolvimento web e análise de dados, a aplicação visa fornecer uma interface interativa e responsiva que permita aos usuários acessar informações detalhadas sobre as condições dos oceanos em tempo real. Este projeto é resultado da integração de conhecimentos das disciplinas de Web Development, Frontend Design e Computational Thinking with Python.
 
-### Objetivos
+### 🎯 Objetivos
 
 - Monitorar a saúde dos oceanos em tempo real.
 - Fornecer análises preditivas e insights acionáveis.
 - Facilitar a tomada de decisões estratégicas para a conservação marinha.
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-### Web Development e Frontend Design
+### 🌐 Web Development e Frontend Design
 
 - **React**
 - **Bootstrap**
@@ -27,7 +27,7 @@ O **Ocean Health Tracker** é uma plataforma desenvolvida para monitorar e anali
 - **Chart.js**
 - **Vite**
 
-### Computational Thinking with Python
+### 🧠 Computational Thinking with Python
 
 - **Python**
 - **Flask**
@@ -36,16 +36,16 @@ O **Ocean Health Tracker** é uma plataforma desenvolvida para monitorar e anali
 - **Pandas**
 - **Scikit-learn**
 
-## Funcionalidades
+## 🚀 Funcionalidades
 
-### Frontend Design
+### 💻 Frontend Design
 
 - **Responsividade:** Abordagem mobile-first para garantir uma ótima experiência em dispositivos móveis e desktops.
 - **Flexbox:** Criação de layouts flexíveis e responsivos.
 - **Bootstrap:** Utilizado para padronizar e acelerar o desenvolvimento do código.
 - **Sass:** Scripts de Sass para estilização do código.
 
-### Web Development
+### 💾 Web Development
 
 - **Versionamento:** Utilização de Git e GitHub para controle de versão.
 - **Manipulação de Branchs:** Uso de branches para desenvolvimento de novas funcionalidades e correções.
@@ -57,7 +57,7 @@ O **Ocean Health Tracker** é uma plataforma desenvolvida para monitorar e anali
 - **Manipulação do DOM:** Manipulação direta do DOM para responder às interações do usuário.
 - **Boas Práticas:** Código estruturado seguindo as boas práticas de desenvolvimento web.
 
-### Computational Thinking with Python
+### 🧬 Computational Thinking with Python
 
 - **Captura de Dados:** Captura de dados de qualidade da água de uma API externa.
 - **Processamento de Dados:** Processamento e apresentação dos dados de forma estruturada.
@@ -65,7 +65,7 @@ O **Ocean Health Tracker** é uma plataforma desenvolvida para monitorar e anali
 - **Manipulação de Arquivos:** Salvamento dos dados processados.
 - **Tratamento de Exceções:** Garantia de robustez do sistema com tratamento de exceções.
 
-## Estrutura de Arquivos
+## 🗂️ Estrutura de Arquivos
 
 ```bash
 GSFrontWebBranch/
@@ -100,9 +100,9 @@ GSFrontWebBranch/
     └── vite.config.js
 ```
 
-## Instalação
+## ⚙️ Instalação
 
-### Backend (API em Python)
+### 🔧 Backend (API em Python)
 
 1. Clone o repositório:
     ```sh
@@ -126,7 +126,7 @@ GSFrontWebBranch/
 
 A API estará disponível em `http://127.0.0.1:5000`.
 
-### Frontend (React)
+### 🔧 Frontend (React)
 
 1. Navegue até o diretório do frontend:
     ```sh
@@ -143,9 +143,9 @@ A API estará disponível em `http://127.0.0.1:5000`.
 
 A interface estará disponível em `http://localhost:5173`.
 
-## Uso
+## 📖 Uso
 
-### Exemplos de Uso
+### 🏠 Exemplos de Uso
 
 #### Página Inicial (Home)
 
@@ -220,12 +220,12 @@ const Home = () => {
 export default Home;
 ```
 
-#### Contato (Contact)
+#### 📬 Contato (Contact)
 
 - **Formulário de Contato:** Permite que usuários enviem mensagens.
 - **Validação:** Validação dos campos do formulário antes do envio.
 
-#### Dashboard de Saúde dos Oceanos (OceanHealthDashboard.jsx)
+#### 📊 Dashboard de Saúde dos Oceanos (OceanHealthDashboard.jsx)
 
 - **Exibição de Dados Processados:** Exibe dados sobre a qualidade da água em diferentes regiões obtidos de uma API interna desenvolvida em Python.
 
@@ -256,6 +256,8 @@ const OceanHealthDashboard = () => {
   }, []);
 
   if (loading) return <div className="text-center p-3">Carregando...</div>;
+
+
   if (error) return <div className="alert alert-danger" role="alert">Erro: {error}</div>;
 
   return (
@@ -282,11 +284,9 @@ export default OceanHealthDashboard;
 
 ```
 
-#### Gráficos de Dados (ChartComponent.jsx)
+#### 📈 Gráficos de Dados (ChartComponent.jsx)
 
-- **Consumo de API Externa:** Exibe dados sobre
-
- a contagem de lixo na praia por quilômetro quadrado obtidos de uma API pública.
+- **Consumo de API Externa:** Exibe dados sobre a contagem de lixo na praia por quilômetro quadrado obtidos de uma API pública.
 
 ```jsx
 import React, { useEffect, useState } from 'react';
@@ -377,7 +377,7 @@ const ChartComponent = () => {
 export default ChartComponent;
 ```
 
-## Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```bash
 GSFrontWebBranch/
@@ -412,7 +412,7 @@ GSFrontWebBranch/
     └── vite.config.js
 ```
 
-## Requisitos
+## 📋 Requisitos
 
 ### Backend
 
@@ -429,7 +429,7 @@ GSFrontWebBranch/
 - Bootstrap
 - Chart.js
 
-## Dependências
+## 📦 Dependências
 
 ### Backend
 
