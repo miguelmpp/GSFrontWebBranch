@@ -155,43 +155,65 @@ A interface estará disponível em `http://localhost:5173`.
 
 ```jsx
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import { Container } from 'react-bootstrap';
+import CarouselComponent from '../../Componentes/Carousel/CarouselComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Home.css';
+import './Home.scss';
 
 const Home = () => {
   const [phases, setPhases] = useState([]);
 
   useEffect(() => {
-    const fetchPhases = async () => {
-      const response = await axios.get('http://127.0.0.1:5000/api/phases');
-      setPhases(response.data);
-    };
-
-    fetchPhases();
+    fetch('/data/phases.json')
+      .then(response => response.json())
+      .then(data => setPhases(data))
+      .catch(error => console.error('Error fetching phases:', error));
   }, []);
 
   return (
-    <div className="services" id="services">
-      <Container>
-        <h2 className="special-heading">Fases do Projeto</h2>
-        <p>Abordagem de Desenvolvimento</p>
-        <div className="services-content">
-          {phases.map((phase, index) => (
-            <div key={index} className="col">
-              <div className="srv">
-                <i className={`fas ${phase.icon} fa-2x`}></i>
-                <div className="text">
-                  <h3>{phase.title}</h3>
-                  {phase.descriptions.map((desc, idx) => (
-                    <p key={idx}><strong>{desc.title}:</strong> {desc.content}</p>
-                  ))}
+    <>
+      <CarouselComponent />
+
+      <div className="features">
+        <Container>
+          <div className="feat">
+            <h3>Unindo Informações para Uma Ação Coordenada</h3>
+            <p>Consolide dados de sensores, satélites e pesquisas em uma única plataforma poderosa.</p>
+          </div>
+          <div className="feat">
+            <h3>Transformando Dados em Decisões</h3>
+            <p>Acesse análises detalhadas e relatórios personalizáveis para a tomada de decisão estratégica.</p>
+          </div>
+          <div className="feat">
+            <h3>Inovando para o Futuro do Planeta</h3>
+            <p>Contribua para a sustentabilidade dos oceanos com a mais recente tecnologia verde.</p>
+          </div>
+        </Container>
+      </div>
+
+      <div className="services" id="services">
+        <Container>
+          <h2 className="special-heading">Fases do Projeto</h2>
+          <div className="services-content">
+            {phases.map((phase, index) => (
+              <div className="col" key={index}>
+                <div className="srv">
+                  <div className="text">
+                    <h3>{phase.fase}</h3>
+                    {phase.items.map((item, idx) => (
+                      <p key={idx}>
+                        <strong>{item.title}:</strong> {item.description}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </Container>
-    </div>
+            ))}
+          </div>
+        </Container>
+      </div>
+    </>
   );
 };
 
@@ -237,11 +259,11 @@ const OceanHealthDashboard = () => {
   if (error) return <div className="alert alert-danger" role="alert">Erro: {error}</div>;
 
   return (
-    <div className="container my-5 ocean-health-dashboard">
-      <h1 className="mb-4 text-center">Ocean Health Dashboard</h1>
+    <div className="container my-1 ocean-health-dashboard">
+      <h1 className="mb-5 text-center">Comparativo Global de Qualidade de Água por Região</h1>
       <div className="row">
         {data.map((item, index) => (
-          <div key={index} className="col-md-6 mb-3">
+          <div key={index} className="col mb-3">
             <div className="card h-100">
               <div className="card-body">
                 <h5 className="card-title">{item.location}</h5>
@@ -257,6 +279,7 @@ const OceanHealthDashboard = () => {
 };
 
 export default OceanHealthDashboard;
+
 ```
 
 #### Gráficos de Dados (ChartComponent.jsx)
@@ -271,7 +294,7 @@ import axios from 'axios';
 import { Line } from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './ChartComponent.scss';
+import './ChartComponent.scss'; 
 
 Chart.register(...registerables);
 
@@ -295,8 +318,12 @@ const ChartComponent = () => {
           }
         });
 
+        console.log('API Response:', response.data);
+
         if (response.data && response.data.features) {
           const data = response.data.features;
+          console.log('Data:', data);
+
           const labels = data.map(entry => {
             const timestamp = entry.attributes.obsTime;
             const date = new Date(timestamp);
@@ -304,6 +331,9 @@ const ChartComponent = () => {
           });
 
           const values = data.map(entry => entry.attributes.obsValue || 0);
+
+          console.log('Labels:', labels);
+          console.log('Values:', values);
 
           setChartData({
             labels,
