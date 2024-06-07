@@ -65,6 +65,7 @@ O **Ocean Health Tracker** é uma plataforma desenvolvida para monitorar e anali
 - **Manipulação de Arquivos:** Salvamento dos dados processados.
 - **Tratamento de Exceções:** Garantia de robustez do sistema com tratamento de exceções.
 
+> Esta é apenas a parte 1 da disciplina de Computational Thinking with Python. O restante do conteúdo pode ser encontrado em outro repositório: [https://github.com/miguelmpp/pythonGS](https://github.com/miguelmpp/pythonGS).
 ## 🗂️ Estrutura de Arquivos
 
 ```bash
